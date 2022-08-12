@@ -1,0 +1,81 @@
+header {
+    box-shadow: 0px 0px 8px 0px rgba(165, 165, 165, 0.2);
+    top: 0;
+    position: sticky;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px 10px 100px;
+    background-color: #F4EDE5;
+}
+
+#searchNote{
+    width: 25%;
+}
+
+#formInput {
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.20);
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+#formInput h2.create_note_title{
+    font-size: 24px;
+}
+
+#formInput .characters_left{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#submitForm{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    border: 0.5px solid rgb(169, 169, 169);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.10);
+}
+
+#submitForm:hover{
+    background-color: #fff4e8;
+    transition: 0.4s;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0);
+    border: 1px solid antiquewhite;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        padding: 10px 70px 10px 70px;
+    }
+
+    #searchNote{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    header h1.title{
+        font-size: 22px;
+    }
+
+    header{
+        padding: 10px 40px 10px 40px;
+    }
+
+    #searchNote{
+        width: 40%;
+    }
+    
+}

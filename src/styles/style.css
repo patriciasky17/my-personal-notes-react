@@ -1,0 +1,41 @@
+@import 'header.css';
+@import 'body.css';
+@import 'footer.css';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+html{
+  background-color: #F4EDE5;
+}
+
+input,
+textarea {
+  padding: 12px;
+  margin: 12px 0;
+  background-color: transparent;
+  color: black;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+textarea{
+  max-width: 98%;
+  max-height: 100px;
+  min-height: 50px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: black;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}

@@ -1,0 +1,75 @@
+/* CARD */
+.single_note {
+    padding: 30px;
+    cursor: default;
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.single_note:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(253, 239, 223);
+}
+
+.container {
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.container h2 {
+    margin: 1rem 0;
+}
+
+.notes_container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.notes_button{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px;
+    background-color: rgb(255, 230, 198);
+    margin: 0 5px 0 5px;
+    border: 0.5px solid rgba(62, 62, 62, 0.267);
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: rgb(255, 249, 242);
+    transition: 0.4s;
+}
+
+.detail_notes p{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1230px) {
+    .single_note {
+        width: 35%;
+    }
+}
+    
+@media screen and (max-width: 768px) {
+    .single_note {
+        width: 100%;
+    }
+}
